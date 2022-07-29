@@ -4,9 +4,11 @@
 
 package frc.robot;
 
+import edu.wpi.first.util.RuntimeLoader;
 import edu.wpi.first.wpilibj.TimedRobot;
 import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.CommandScheduler;
+import java.io.IOException;
 
 /**
  * The VM is configured to automatically run this class, and to call the functions corresponding to
@@ -25,8 +27,15 @@ public class Robot extends TimedRobot {
    */
   @Override
   public void robotInit() {
-    // Instantiate our RobotContainer.  This will perform all our button bindings, and put our
-    // autonomous chooser on the dashboard.
+    RuntimeLoader<Robot> loader =
+        new RuntimeLoader<>(
+            "CTRE_PhoenixCCISim", RuntimeLoader.getDefaultExtractionRoot(), Robot.class);
+    try {
+      loader.loadLibrary();
+    } catch (IOException ex) {
+      ex.printStackTrace();
+      System.exit(1);
+    }
     m_robotContainer = new RobotContainer();
   }
 
