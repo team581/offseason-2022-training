@@ -5,7 +5,6 @@
 package frc.robot.subsystems;
 
 import com.ctre.phoenix.motorcontrol.can.WPI_TalonFX;
-
 import edu.wpi.first.wpilibj.XboxController;
 import edu.wpi.first.wpilibj.drive.DifferentialDrive;
 import edu.wpi.first.wpilibj.motorcontrol.MotorControllerGroup;
@@ -28,11 +27,10 @@ public class DriveSubsystem extends SubsystemBase {
   private final DifferentialDrive drive = new DifferentialDrive(leftMotorGroup, rightMotorGroup);
   private XboxController controller;
   /** Creates a new DriveSubsystem. */
-  public DriveSubsystem() {
-  }
+  public DriveSubsystem() {}
 
   public void initDefaultCommand() {
-    //set default command here
+    // set default command here
     setDefaultCommand(new TeleopDriveCommand(this, controller));
   }
 
