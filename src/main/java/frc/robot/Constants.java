@@ -19,4 +19,6 @@ public final class Constants {
   public static final int BACK_LEFT_MOTOR_PORT = 3;
 
   public static final int CONTROLLER_USB_PORT = 0;
+
+  public static final int ELEVATOR_MOTOR_PORT = 4;
 }
