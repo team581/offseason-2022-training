@@ -9,8 +9,8 @@ import edu.wpi.first.wpilibj2.command.CommandBase;
 import frc.robot.subsystems.DriveSubsystem;
 
 public class TeleopDriveCommand extends CommandBase {
-  private DriveSubsystem driveSubsystem;
-  private XboxController controller;
+  private final DriveSubsystem driveSubsystem;
+  private final XboxController controller;
 
   /** Creates a new TeleopDriveCommand. */
   public TeleopDriveCommand(DriveSubsystem driveSubsystem, XboxController controller) {

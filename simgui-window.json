@@ -11,14 +11,19 @@
     }
   },
   "Window": {
+    "###/LiveWindow/Ungrouped/Scheduler": {
+      "Collapsed": "0",
+      "Pos": "282,46",
+      "Size": "400,200"
+    },
     "###FMS": {
       "Collapsed": "0",
-      "Pos": "6,675",
+      "Pos": "26,738",
       "Size": "336,164"
     },
     "###Joysticks": {
       "Collapsed": "0",
-      "Pos": "375,558",
+      "Pos": "430,792",
       "Size": "976,139"
     },
     "###NetworkTables": {
@@ -28,8 +33,13 @@
     },
     "###Other Devices": {
       "Collapsed": "0",
-      "Pos": "1562,48",
-      "Size": "312,868"
+      "Pos": "1435,41",
+      "Size": "544,868"
+    },
+    "###Plot <0>": {
+      "Collapsed": "0",
+      "Pos": "60,60",
+      "Size": "856,693"
     },
     "###System Joysticks": {
       "Collapsed": "0",
